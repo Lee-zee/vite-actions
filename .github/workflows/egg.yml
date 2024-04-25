@@ -4,8 +4,7 @@ jobs:
   npm-build:
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v2
-      - run: pwd
-      - run: npm --version
+      # 使用checkout将文件复制到ubuntu系统中
+      - uses: actions/checkout@v4
       - run: npm install
       - run: npm run build
